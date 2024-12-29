@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Currency Converter</h1>
+        <form action="">
+            <div class="amount">
+                <p>Enter an Amount : </p>
+                <input type="text" value="1" id="amount">
+            </div>
+            <div class="dropdown">
+                <div class="from ">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/shiny/64.png" alt="no image found">
+                        <select name="from" id="from-select">
+                        </select>
+                    </div>
+                    </div>
+                    <button id="swap" ><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                <div class="to ">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/shiny/64.png" alt="no image found">
+                        <select name="to" id="to-select">
+                        
+                        </select>
+                    </div>
+                    </div>
+                </div>
+            <div class="message">
+                <p id="message">270 pkr = 1USD</p>
+            </div>
+            <div class="button">
+                <button id="exchange">
+                    Compute
+                </button>
+            </div>
+            
+            <div class="note">
+                <p>Till update to : </p>
+            </div>
+        </form>
+       
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="countryCodes.js"></script>
+</body>
+
+</html>
