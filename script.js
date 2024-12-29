@@ -26,13 +26,13 @@ for (select of dropdowns) {
     }
     select.append(newoption)
   }
+  // change the flag with the selected country
+  select.addEventListener("change", (evt) => {
+    updateFlag(evt.target)
 
+  })
 }
-// change the flag with the selected country
-select.addEventListener("change", (evt) => {
-  updateFlag(evt.target)
 
-})
 
 // ============================================================================================
 // main function
@@ -60,9 +60,9 @@ let updateExchangeRate = async () => {
   }
 };
 
-const output = (exchangeRate)=>{
+const output = (exchangeRate) => {
   let output = exchangeRate * getAmountValue()
-   output_message.innerText = `Output : ${getAmountValue()} ${fromcountry.value} = ${output.toFixed(3)} ${tocountry.value}`
+  output_message.innerText = `Output : ${getAmountValue()} ${fromcountry.value} = ${output.toFixed(3)} ${tocountry.value}`
 }
 
 swap_icon.addEventListener('click', (event) => {
